@@ -12,7 +12,7 @@ var swiper = new Swiper(".home", {
     },
   });
 
-  var swiper = new Swiper(".coming-soon", {
+  var swiper = new Swiper(".movies-out-now", {
     spaceBetween: 10,
     loop: true,
     centeredSlides: true,
@@ -36,7 +36,7 @@ var swiper = new Swiper(".home", {
     }
   });
 
-  var swiper = new Swiper(".movies-out-now", {
+  var swiper = new Swiper(".kids-movies", {
     spaceBetween: 10,
     loop: true,
     centeredSlides: true,
