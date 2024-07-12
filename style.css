@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Poppins, Arial;
+}
+:root {
+    --text-color: white;
+    --main-color: rgb(255, 165, 0);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--main-color); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background:  rgb(206, 134, 0);
+}
+
+body {
+    background: black;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+#menu-icon {
+    font-size: 30px;
+    color: var(--main-color);
+    display: none;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar a {
+    padding: 0 30px;
+    color: white; 
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.search i {
+    color: black;
+}
+
+.search-bar {
+    font-size: 15px;
+    margin-left: 10px;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.search-bar::placeholder {
+    color:var(--main-color);
+    font-weight: bold;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.banner img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+}
+
+.banner-content {
+    padding: 200px 150px;
+}
+
+.banner-content h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.banner-content span {
+    color: white;
+    font-size: 22px;
+}
+
+.banner-content p {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin: 10px 0;
+    width: 60%;
+}
+
+.banner-content button {
+    border: none;
+    padding: 10px 35px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.banner-content button:hover {
+    box-shadow: 0px 0px 25px var(--main-color);
+}
+
+.banner-content button:active {
+    background: white;
+    color: var(--main-color);
+}
+
+.heading {
+    color: var(--text-color);
+    font-size: 40px;
+    padding: 0 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.coming-soon .movies-out-now {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(auto-fit, minmax(190px, auto));
+}
+
+
+.movie {
+    width: 100%;
+    height: 250px;
+}
+
+.movie img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.movie img:hover {
+    transform: translateY(-15px);
+}
+
+/*Responsiveness*/
+
+@media (max-width: 1080) {
+    .banner-content {
+        padding: 0 100px;
+    }
+}
+
+@media (max-width: 950px) {
+    .header {
+        padding: 18px 5%;
+    }
+    section {
+        padding: 50px 5%;
+    }
+    #menu-icon {
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 1rem 3rem;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: none ;
+    }
+    .navbar li {
+        display: block;
+        font-size: 2rem;
+        margin: 10px 0;
+        color: var(--text-color);
+    }
+    .navbar.active {
+        display: block;
+    }
+}
+
+@media (max-width: 780px) {
+    .banner-content p {
+        font-size: 16px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .banner-content h2 {
+        font-size: 25px;
+    }
+
+    .banner-content p {
+        font-size: 14px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .banner-content p {
+        width: 120%;
+    }
+    .banner-content h2 {
+        font-size: 1.3rem;
+    }
+    .banner-content span {
+        font-size: 15px;
+    }
+}
+
+
+
+
