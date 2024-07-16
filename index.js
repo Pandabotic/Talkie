@@ -36,13 +36,13 @@ var thumbsSwiper = new Swiper('.thumbsSwiper',{
   slidesPerView: 5,
   breakpoints:{
     200:{
-      slidesPerView: 2
-    },
-    400:{
       slidesPerView: 3
     },
-    600:{
+    400:{
       slidesPerView: 4
+    },
+    600:{
+      slidesPerView: 5
     },
     1100:{
       slidesPerView: 6
