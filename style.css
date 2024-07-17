@@ -307,13 +307,20 @@ body {
 }
 
 @media only screen and (max-width: 390px) {
+
+    .content {
+        padding-top: 80px;
+    }
     #title h1 {
         font-size: 30px;
+        text-align: center;
     }
 
     #description p {
         font-size: 15px;
+        margin: 10px 0;
     }
+
 }
 
 
