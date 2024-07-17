@@ -145,7 +145,7 @@ body {
 }
 
 .content {
-    height: 70vh;
+    height: 59vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -228,13 +228,12 @@ body {
 
 .thumbsSwiper {
     box-sizing: border-box;
-    padding: 10px 0;
     max-width: 90%;
     overflow-y: unset !important;
 }
 
 .thumbsSwiper .swiper-slide {
-    width: 25%;
+    width: 30%;
     height: 100%;
     cursor: pointer;
     padding: 0 10px;
