@@ -35,11 +35,11 @@ var thumbsSwiper = new Swiper('.thumbsSwiper',{
   spaceBetween: 10,
   slidesPerView: 5,
   breakpoints:{
-    200:{
-      slidesPerView: 3
+    300:{
+      slidesPerView: 2
     },
     400:{
-      slidesPerView: 4
+      slidesPerView: 3
     },
     600:{
       slidesPerView: 5
