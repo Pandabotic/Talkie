@@ -175,7 +175,7 @@ body {
     color: white;
     font-size: 20px;
     max-width: 500px;
-    line-height: 1.4rem;
+    line-height: 1.3rem;
 }
 
 .buttons {
@@ -312,12 +312,13 @@ body {
         padding-top: 80px;
     }
     #title h1 {
-        font-size: 30px;
+        font-size: 35px;
         text-align: center;
     }
 
     #description p {
         font-size: 15px;
+        font-weight:bold;
         margin: 10px 0;
     }
 
